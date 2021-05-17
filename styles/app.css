@@ -6,11 +6,13 @@
 html {
     scroll-behavior: smooth;
   }
+
 header {
     height: 100vh;
     background: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/bg.jpg);
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 .triangle-right {
     width: 0;
@@ -55,7 +57,6 @@ header {
 }
 .nav-list li:hover {
     background-size: 4px 100%, 4px 100%, 100% 4px, 100% 4px;
-    background-coor: black;
 }
 
 .nav-list li a{
@@ -77,8 +78,10 @@ header {
 }
 .rightNav{
     text-align: right;
-    margin-top: auto;
+    margin: auto;
     padding-right: 20px;
+    display: flex;
+    justify-content: center;
 }
 #search{
     padding: 5px;
@@ -86,16 +89,19 @@ header {
     width: 80%;
     flex-shrink: 1;
     min-width: 10px;
-    margin-top: auto;
-    border-radius: 5px;
     outline: none;
     text-align: center;
+    border: none;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 0px;
 }
 .btn{
-    width: 86px;
-    height: 33px;
-    border-radius: 15px;
-    margin-top: 10px;
+    background-color: white;
+    border: none;
+    border-left: 1px solid grey;
+    width: 30px;
+    margin: 0px;
 }
 .list {
     height: 30px;
@@ -161,5 +167,49 @@ header {
     }
     #search{
         margin-right: 10px;
+    }
+}
+.home_heading_container{
+    display: flex;
+    align-items: center;
+    background-color: rgba(193, 219, 227,0.5);
+    margin-top: 7%;
+    margin-bottom: 7%;
+    padding: 20px;
+}
+.headline{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-family: 'Arvo', serif;
+    background-image: linear-gradient(rgba(193, 219, 227,1),rgba(193, 219, 227,1)),
+    linear-gradient(rgba(193, 219, 227,1),rgba(193, 219, 227,1)),
+    linear-gradient(rgba(193, 219, 227,1),rgba(193, 219, 227,1)),
+    linear-gradient(rgba(193, 219, 227,1),rgba(193, 219, 227,1));
+    background-repeat: no-repeat;
+    background-size: 4px 50%, 4px 50%, 50% 4px,50% 4px;
+    background-position: left top, right bottom, left top,right bottom;
+    transition: 1s;
+    margin: auto;
+    margin-top : auto;
+}
+.home_heading{
+    margin: auto;
+    width: 60%;
+    font-size: 3em;
+    padding: 20px
+
+}
+.home_para{
+    padding: 20px;
+}
+.about_heading{
+    background-color: blue;
+}
+
+@media (max-width: 561px){
+    .home_heading{ 
+        font-size: 1em;
     }
 }

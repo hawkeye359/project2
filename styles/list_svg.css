@@ -1,18 +1,15 @@
-.svg-icon {
+.list {
   width: 2em;
   height: 2em;
 }
 
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
+.list path,
+.list polygon,
+.list rect {
   fill: black;
 }
-.svt-icon path {
-    fill: black;
-}
 
-.svg-icon circle {
+.list circle {
   stroke: black;
   stroke-width: 1;
 }
