@@ -1,15 +1,18 @@
 console.log(window.innerWidth);
+const navbar = document.querySelector(".nav-list");
 function backGround() {
 
-    if (window.innerWidth < 700) {
-
+    if (window.innerWidth > 562) {
+        if (navbar.style.display === "none") {
+            displayChange();
+        }
     }
     else {
 
     }
 }
 const newLocal = setInterval(backGround, 100);
-const navbar = document.querySelector(".nav-list");
+
 let positionChange = function () {
     navbar.style.right = "0px";
 
@@ -17,17 +20,23 @@ let positionChange = function () {
 let displayChange = function () {
     navbar.style.display = "flex";
 }
+
 const drawer = function () {
-    console.log("hiii");
-    setTimeout(positionChange, 100);
-    setTimeout(displayChange, 50);
+    if (window.innerWidth < 500) {
+        console.log("hiii");
+        setTimeout(positionChange, 100);
+        setTimeout(displayChange, 50);
+    }
+
 }
 function hiding() {
     navbar.style.display = "none";
 }
 const body = document.querySelector("body");
 const closeHeader = function () {
-    console.log("hii buddhu")
-    navbar.style.right = "-250px";
-    setTimeout(hiding, 1000);
+    if (window.innerWidth < 500) {
+        console.log("hii buddhu")
+        navbar.style.right = "-250px";
+        setTimeout(hiding, 1000);
+    }
 }
