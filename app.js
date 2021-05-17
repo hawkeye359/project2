@@ -1,25 +1,3 @@
-console.log(window.innerWidth);
-const navbar = document.querySelector(".nav-list");
-function backGround() {
-
-    if (window.innerWidth > 562) {
-        if (navbar.style.display === "none") {
-            displayChange();
-        }
-    }
-    else {
-
-    }
-}
-const newLocal = setInterval(backGround, 100);
-
-let positionChange = function () {
-    navbar.style.right = "0px";
-
-}
-let displayChange = function () {
-    navbar.style.display = "flex";
-}
 
 const drawer = function () {
     if (window.innerWidth < 500) {
@@ -29,6 +7,29 @@ const drawer = function () {
     }
 
 }
+console.log(window.innerWidth);
+const navbar = document.querySelector(".nav-list");
+function backGround() {
+
+    if (window.innerWidth >= 562) {
+        if (navbar.style.display === "none") {
+            displayChange();
+        }
+    }
+    else {
+    }
+}
+setInterval(backGround, 100);
+
+let positionChange = function () {
+    navbar.style.right = "0px";
+
+}
+let displayChange = function () {
+    navbar.style.display = "flex";
+}
+
+
 function hiding() {
     navbar.style.display = "none";
 }

@@ -1,0 +1,18 @@
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: black;
+}
+.svt-icon path {
+    fill: black;
+}
+
+.svg-icon circle {
+  stroke: black;
+  stroke-width: 1;
+}

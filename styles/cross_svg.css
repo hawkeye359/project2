@@ -1,0 +1,23 @@
+.svg-icon {
+    width: 2em;
+    height: 2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+#cross{
+    display: none;
+}
+@media (max-width: 561px){
+    #cross{
+        display: block;
+    }
+}
