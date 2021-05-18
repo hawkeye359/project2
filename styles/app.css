@@ -144,6 +144,11 @@ header {
 }
 
 @media (max-width: 561px){
+    .triangle-right{
+        border-top: 35px solid transparent;
+    border-left: 16px solid rgba(193, 219, 227,1);
+    border-bottom: 34px solid transparent;
+    }
     #logo{
         width: 142px;
         height: 69px;
@@ -178,19 +183,21 @@ header {
         
     }
     .rightNav{
-        padding-top: 10px;
-    padding: 2px;
     display: flex;
     justify-content: flex-start;
     height: 27px;
     margin: 0px;
+    padding: 0px
     }
     #search{
         margin-right: 0px;
         height: 17px;
+        margin-left: 0px;
+        width: 89%
     }
     .btn {
         height: 27px;
+        width: 31px
     }
 }
 .home_heading_container{
