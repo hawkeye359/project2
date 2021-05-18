@@ -251,11 +251,11 @@ header {
 
 @media (max-width: 561px){
     .home_heading{ 
-        font-size: 1em;
+        font-size: 2em;
         word-break: break-all;
     }
     .home_para{
-        font-size: .5em;
+        font-size: 1em;
         word-break: break-all;
     }
     .container{
