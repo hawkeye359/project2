@@ -106,7 +106,7 @@ header {
 .btn{
     background-color: white;
     border: none;
-    border-left: 1px solid grey;
+    border-left: 1px solid #F8F9FA;
     width: 30px;
     margin: 0px;
 }
