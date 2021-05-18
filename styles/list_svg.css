@@ -6,10 +6,10 @@
 .list path,
 .list polygon,
 .list rect {
-  fill: black;
+  fill: rgba(193, 219, 227,1);
 }
 
 .list circle {
-  stroke: black;
+  stroke: rgba(193, 219, 227,1);
   stroke-width: 1;
 }

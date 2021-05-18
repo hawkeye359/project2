@@ -15,3 +15,12 @@
     stroke: black;
     stroke-width: 1;
   }
+  @media (max-width: 561px){
+      .search_svg {
+        width: 1em;
+        height: 1em;
+        margin: auto;
+        margin-top: 3px;
+    }
+    
+  }
